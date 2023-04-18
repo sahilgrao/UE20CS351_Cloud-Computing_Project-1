@@ -1,13 +1,16 @@
 # UE20CS351_Cloud-Computing_Project-1
 
-Project: Implementing Raft Logic in Go
-In this project, you will:
-Learn the basics of GoLang.
-Understand the basic logic behind Raft
-Implement part of the logic behind raft, in GoLang, for leader election and log replication.
-What you're given:
+# Project: Implementing Raft Logic in Go
+
+## *In this project, you will:
+1.Learn the basics of GoLang.
+2.Understand the basic logic behind Raft
+3.Implement part of the logic behind raft, in GoLang, for leader election and log replication.
+## *What you're given:
 You are provided with a GoLang project structure, which, when complete, will allow you to successfully demonstrate leader election and log replication via Raft. However, parts of the code are deliberately missing; Your job is to fill it in, and make sure that expected behaviour is observed in scenarios such as network partitioning.
 
+
+```
 .
 ├── go.mod
 ├── NodeLogs
@@ -28,7 +31,7 @@ You are provided with a GoLang project structure, which, when complete, will all
     ├── 1.log
     └── 2.log
     
-
+```
 The files server_setup.go, raft_node.go and raft_cluster.go require no modification. raft_node.go, however, contains vital information about the persistent state of a raft node itself, and is worth going through to better understand the flow of the code.
 
 How you should start:
@@ -42,7 +45,7 @@ Familiarise yourself with Raft Leader Election and Log Replication, i.e up until
 
 The scenarios we deal with here do not include complete node failure, although it is trivial to account for such a case by asking recovered nodes to replay their logs. Instead, we deal with partitioned nodes; i.e, a 'disconnected node' is a node that is still functioning, but is cut off from the rest of the cluster. Think along the lines of 'its internet failed.' KNOWING THIS IS IMPORTANT FOR YOUR EVALUATION.
 
-What's expected of you:
+## *What's expected of you:
 You are expected to implement 4 specific functionalities:
 
 Implement the becomeFollower function entirely.
