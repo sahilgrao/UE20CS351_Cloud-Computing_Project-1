@@ -27,6 +27,8 @@ You are provided with a GoLang project structure, which, when complete, will all
 └── verbose
     ├── 1.log
     └── 2.log
+    
+//*
 The files server_setup.go, raft_node.go and raft_cluster.go require no modification. raft_node.go, however, contains vital information about the persistent state of a raft node itself, and is worth going through to better understand the flow of the code.
 
 How you should start:
